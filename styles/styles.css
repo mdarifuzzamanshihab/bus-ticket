@@ -140,3 +140,13 @@
   height: 200px;
   color: #000000;
 }
+
+/* sell offer btn */
+.btn2 {
+    font-weight: 600;
+    font-size: 1.2em;
+  border: 2px solid #1dd100;
+  padding: 14px 20px;
+  color: #1dd100;
+  border-radius: 15px;
+}
