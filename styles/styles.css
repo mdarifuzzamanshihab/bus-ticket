@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* font raleway */
 
@@ -8,7 +6,7 @@
   font-family: "Raleway", sans-serif;
 }
 .font-inter {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* color */
@@ -25,45 +23,104 @@
 }
 
 .Stext {
-    top: 20px;
-    position: relative;
+  top: 20px;
+  position: relative;
   color: #1dd100;
 }
 
-.box{
-    background-color: white;
-    display: flex;
-    border-bottom: solid #1dd100;
-    height: 140px;
-    width: 310px;
-    border-radius: 20px;
+.box {
+  background-color: white;
+  display: flex;
+  border-bottom: solid #1dd100;
+  height: 140px;
+  width: 310px;
+  border-radius: 20px;
 }
-.box img{
-    height: 64px;
-    width: 64px;
+.box img {
+  height: 64px;
+  width: 64px;
+}
+
+.box h3 {
+  font-size: 30px;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box2 h3 {
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+}
+
+.box-container {
+  position: absolute;
+  bottom: 75px;
+  margin-left: 149px;
+}
+
+/* coupon */
+.coupon1 {
+  background-color: #ffbf0f;
+  width: 317px;
+  /* width: 573px; */
+  height: 220px;
+  border-top-left-radius: 24px;
+  height: 220px;
+  border-bottom-left-radius: 24px;
+}
+.coupon2 {
+  background-color: #ffbf0f;
+  width: 317px;
+  /* width: 573px; */
+  height: 220px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.design1 {
+  background-color: #ffbf0f;
+  width: 46px;
+}
+.coupon1 h3 {
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+.coupon2 h3 {
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
 }
 
 
-.box h3{
-    font-size: 30px;
+.circle2 {
+  background: #ffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+ left: 292px;
+  transform: translateY(-50%);
+}
+.circle1{
+    background: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+ left: 292px;
+ top: 168px;
+  transform: translateY(50%);
+}
+
+.dash {
     
-}
-
-.box2{
-    display: flex;
-    flex-direction: column;
-}
-
-.box2 h3{
-    font-weight: 900;
-    font-family: "Inter", sans-serif;
-}
-
-.box-container{
+    transform: rotateX(90deg) translateX(-10px);
+    width: 1px;
+    height: 200px;
+    color: #000000;
     
-    position: absolute;
-    bottom: 75px;
-    margin-left: 149px
-    
-   
 }
