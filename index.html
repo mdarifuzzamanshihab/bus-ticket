@@ -10,11 +10,85 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5862bef766.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        
+    <header class="font-raleway max-w-7xl mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">S-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="flex flex-row gap-2 bg-[#1DD1001A] text-[#1DD100] font-medium border-2 border-[#1DD10066] rounded-lg py-2 px-4">Bus
+                    <img src="./images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner hero  h-[550px]" style="">
+            <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl">
+                    <h1 class="mb-10 text-6xl font-bold">End-to-End Travel with<br><span class="Stext">S
+                            Paribahan</span></h1>
+                    <p class="mb-10 font-light px-7">Yes, you can run unit tests and view the results directly within
+                        the app. The integrated testing features allow for a streamlined .</p>
+                    <button class="btn bg-[#1dd100] border-none font-extrabold">Get Started</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-container flex flex-row justify-center items-center gap-7">
+            <div class="box flex justify-center items-center space-x-5 ">
+                <img src="./images/people.png" alt="">
+                <div class="box2">
+                    <h3>500K+</h3>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="box flex justify-center items-center space-x-5 ">
+                <img src="./images/ticket-cupon.png" alt="">
+                <div class="box2">
+                    <h3>1.7 lacks</h3>
+                    <p>Tickets sold</p>
+                </div>
+            </div>
+            <div class="box flex justify-center items-center space-x-5 ">
+                <img src="./images/stoppage.png" alt="">
+                <div class="box2">
+                    <h3>80K+</h3>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+
+        </div>
     </header>
     <main>
 
