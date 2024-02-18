@@ -115,7 +115,7 @@
 }
 
 .circle2 {
-  background: #ffff;
+  background: #F7F8F8;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -124,7 +124,7 @@
   transform: translateY(-50%);
 }
 .circle1 {
-  background: #ffffff;
+  background: #F7F8F8;
   border-radius: 50%;
   width: 50px;
   height: 50px;
