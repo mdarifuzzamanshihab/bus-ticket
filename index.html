@@ -90,7 +90,7 @@
 
         </div>
     </header>
-    <main>
+    <main class="bg-[#F7F8F8]">
         <!-- offers -->
         <section class="max-w-7xl mx-auto">
             <div class="flex justify-center">
@@ -219,9 +219,9 @@
                 </div>
             </div>
             <!-- all seat -->
-            <div class="all-seat-container w-full h-[1170px] bg-[#ffff] max-w-7xl mx-auto p-7 mt-10 rounded-3xl">
-                <div class="seats space-y-4">
-                    <h1>Select Your Seat</h1>
+            <div class="all-seat-container w-full h-[1000px] bg-[#ffff] max-w-7xl mx-auto p-7 mt-10 rounded-3xl">
+                <div class="seats space-y-4 w-[672px]">
+                    <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                     <hr>
                     <div class="flex flxe-row justify-between">
                         <div class="flex flex-row">
@@ -230,19 +230,19 @@
                         </div>
                         <div class="flex flex-row">
                             <img src="./images/seat-green-filled.png" alt="">
-                            <p>Selected</p>
+                            <p class="text-[#1DD100]">Selected</p>
                         </div>
                     </div>
                     <hr>
                 </div>
-                <div class="flex justify-end mb-4 mt-4">
+                <div class="flex justify-end mb-4 mt-4 w-[670px]">
                     <div class="w-[110px] h-[57px] bg-[#0307121A] flex justify-center items-center rounded-xl">
                         <img src="./images/wheel.png" alt="">
                     </div>
                 </div>
                 <!-- all seats div -->
-                <div class="flex">
-                    <div class="flex flex-row justify-between space-x-20">
+                <div class="flex relative">
+                    <div class="flex flex-row justify-between space-x-36">
                         <div>
                             <div class="flex flex-row space-x-6 mb-4">
                                 <p class="flex items-center">A</p>
@@ -255,7 +255,7 @@
                             </div>
                             <div class="flex flex-row  space-x-6 mb-4">
                                 <p class="flex items-center">B</p>
-                                <div class="seat1">
+                                <div class="seat1 bg-color">
                                     B1
                                 </div>
                                 <div class="seat1">
@@ -276,7 +276,7 @@
                                 <div class="seat1">
                                     D1
                                 </div>
-                                <div class="seat1">
+                                <div class="seat1 bg-color">
                                     D2
                                 </div>
                             </div>
@@ -422,53 +422,56 @@
 
 
                         </div>
-                        <div class="line1">
 
-                        </div>
+                    </div>
+                    <div class="line1">
+
                     </div>
 
-                    <div class="grand-total">
-                        <h1>Select Your Seat</h1>
+                    <div class="grand-total space-y-4">
+                        <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                         <hr>
-                        <div class="h- w-[435px] bg-[#F7F8F8] p-4 rounded-xl">
+                        <div class="w-[435px] bg-[#F7F8F8] p-4 rounded-xl space-y-4">
                             <div class="flex justify-between">
-                                <h3>Seat</h3>
-                                <h3>Class</h3>
-                                <h3>Price</h3>
+                                <h3 class="font-semibold">Seat<sup class="sup-text">2</sup></h3>
+                                <h3 class="font-semibold">Class</h3>
+                                <h3 class="font-semibold">Price</h3>
                             </div>
                             <hr>
                             <div class="flex justify-between">
-                                <h3>C3</h3>
-                                <h3>Economy</h3>
-                                <h3>550</h3>
+                                <h3 class="text-[#03071299]">C3</h3>
+                                <h3 class="text-[#03071299]">Economy</h3>
+                                <h3 class="text-[#03071299]">550</h3>
                             </div>
                             <div class="flex justify-between">
-                                <h3>C3</h3>
-                                <h3>Economy</h3>
-                                <h3>550</h3>
+                                <h3 class="text-[#03071299]">C3</h3>
+                                <h3 class="text-[#03071299]">Economy</h3>
+                                <h3 class="text-[#03071299]">550</h3>
                             </div>
                             <hr>
                             <div class="flex justify-between">
-                                <h3>Total Price</h3>
-                                <h3>BDT 1100</h3>
+                                <h3 class="font-semibold">Total Price</h3>
+                                <h3 class="font-semibold">BDT 1100</h3>
                             </div>
                             <div class="relative">
-                                <input type="text" class="p-3 w-[400px] rounded-xl" placeholder="Have any coupon?" name=""
-                                    id=""><button type="button" class="absolute right-[0.60rem] text-white top-[0.25rem] bg-[#1DD100] p-2 rounded-xl w-[80px] h-[40px]">Apply</button>
+                                <input type="text" class="p-3 w-[400px] rounded-xl" placeholder="Have any coupon?"
+                                    name="" id=""><button type="button"
+                                    class="absolute right-[0.60rem] text-white top-[0.25rem] bg-[#1DD100] p-2 rounded-xl w-[80px] h-[40px]">Apply</button>
                             </div>
                             <div class="flex justify-between">
-                                <h3>Grand Total</h3>
-                                <h3>BDT 1100</h3>
+                                <h3 class="font-semibold">Grand Total</h3>
+                                <h3 class="font-semibold">BDT 1100</h3>
                             </div>
-                           
+
                         </div>
-                        <div>
-                            <h3>Passenger Name*</h3>
-                            <input class="w-full p-3 rounded-xl" type="" value="" placeholder="Enter your name">
-                            <h3>Phone Number*</h3>
-                            <input class="w-full p-3 rounded-xl" type="" value="" placeholder="Enter your phone number">
-                            <h3>Email ID</h3>
-                            <input class="w-full p-3 rounded-xl" type="email" value="" placeholder="Enter your email id">
+                        <div class="space-y-6">
+                            <h3 class="font-semibold mt-8">Passenger Name*</h3>
+                            <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="" value="" placeholder="Enter your name">
+                            <h3 class="font-semibold">Phone Number*</h3>
+                            <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="" value="" placeholder="Enter your phone number">
+                            <h3 class="font-semibold">Email ID</h3>
+                            <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="email" value=""
+                                placeholder="Enter your email id">
                             <button class="bg-[#1DD100] text-white w-full p-3 rounded-xl">Next</button>
                             <div class="flex flex-row justify-around">
                                 <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
@@ -480,7 +483,7 @@
             </div>
         </section>
     </main>
-    <footer class=" bg-[#030712] h-[457px]">
+    <footer class="mt-20 bg-[#030712] h-[457px]">
         <footer class="footer px-4 py-16 flex justify-between  text-neutral-content max-w-7xl mx-auto">
             <aside>
                 <h2 class="text-3xl text-white font-bold mb-5">P-Ticket</h2>

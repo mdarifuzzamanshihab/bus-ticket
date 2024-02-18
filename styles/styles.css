@@ -134,7 +134,7 @@
   transform: translateY(50%);
 }
 .circle5 {
-  background: #F7F8F8;
+  background: #f7f8f8;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -149,7 +149,7 @@
   transform: translateY(50%); */
 }
 .circle6 {
-  background: #F7F8F8;
+  background: #f7f8f8;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -171,50 +171,75 @@
 
 /* sell offer btn */
 .btn2 {
-    font-weight: 600;
-    font-size: 1.2em;
+  font-weight: 600;
+  font-size: 1.2em;
   border: 2px solid #1dd100;
   padding: 14px 20px;
   color: #1dd100;
   border-radius: 15px;
 }
 
-.hr2{
-    border-top: 1px gray dashed;
+.hr2 {
+  border-top: 1px gray dashed;
 }
-.hr3{
-    border-top: 1px rgb(0, 0, 0) dashed;
-    z-index: 1;
+.hr3 {
+  border-top: 1px rgb(0, 0, 0) dashed;
+  z-index: 1;
 }
 
-.hr-footer{
-    border-top: 2px dashed ;
+.hr-footer {
+  border-top: 2px dashed;
 }
 
 /* seat */
-.seat{
-    border-top: 2px solid #1dd100;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
+.seat {
+  border-top: 2px solid #1dd100;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
 }
-
 
 /* seats design */
 
-.seat1{
-  
+.seat1 {
   width: 110px;
   height: 57px;
-  background-color: #F7F8F8;
+  background-color: #f7f8f8;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.line1{
+.line1 {
+  margin-left: 40px;
+  margin-right: 40px;
+  transform: translateY(-206px);
   width: 1px;
   background-color: #000000;
-  height: 800px;
+  height: 992px;
+}
+
+/* sup text */
+.sup-text {
+  border-radius: 7px;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0px 8px;
+  background-color: #1dd100;
+}
+
+.all-seat-container hr {
+  border: 1px dashed;
+  color: rgba(128, 128, 128, 0.795);
+}
+
+.grand-total {
+  margin-top: -200px;
+}
+
+/* all seat bg color */
+.bg-color {
+  background-color: #1dd100;
+  color: #ffffff;
 }
