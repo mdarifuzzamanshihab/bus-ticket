@@ -133,6 +133,34 @@
   top: 168px;
   transform: translateY(50%);
 }
+.circle5 {
+  background: #F7F8F8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  left: -20px;
+  position: absolute;
+  left: 975px;
+  top: -29px;
+  /* position: absolute;
+  left: -26px;
+  top: 975px;
+  transform: translateY(50%); */
+}
+.circle6 {
+  background: #F7F8F8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 390px;
+  left: 975px;
+  position: absolute;
+  /* position: absolute;
+  left: 292px;
+  top: 168px;
+  transform: translateY(50%); */
+}
 
 .dash {
   transform: rotateX(90deg) translateX(-10px);
@@ -149,4 +177,38 @@
   padding: 14px 20px;
   color: #1dd100;
   border-radius: 15px;
+}
+
+.hr2{
+    border-top: 1px gray dashed;
+}
+.hr3{
+    border-top: 1px rgb(0, 0, 0) dashed;
+    z-index: 1;
+}
+
+.hr-footer{
+    border-top: 2px dashed ;
+}
+
+/* seat */
+.seat{
+    border-top: 2px solid #1dd100;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+
+/* seats design */
+
+.seat1{
+  
+  width: 110px;
+  height: 57px;
+  background-color: #F7F8F8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
