@@ -3,23 +3,45 @@ function clickBg(element) {
     const elementText = getElementText(element)
     setBgColor(elementText);
     seatIncrease()
-    appendSeat()    
+    const selectSeat2 = document.getElementById('seatName1')
+    selectSeat2.innerText = elementText;
+
+    newSeatName(element);
+
 
 
 
 
 }
 
-// make innerhtml for seat booking
-function appendSeat() {
-    const selectElement = getElement('seatTotalWithName');
-    selectElement.innerHTML +=
-        `<div class="flex justify-between">
-        <h3 class="text-[#03071299]">C3</h3>
-        <h3 class="text-[#03071299]">Economy</h3>
-        <h3 class="text-[#03071299]">550</h3>
-    </div>`;
+//seat name added by append 
+
+function newSeatName(element) {
+    const elementSelect = document.getElementById(element)
+    const elementSelectInner = elementSelect.innerText;
+    const selectElement = document.getElementById('seatTotalWithName')
+    const newSeatDiv = document.createElement('div');
+    const newSeatH3 = document.createElement('h3');
+    const newSeatH32 = document.createElement('h3');
+    const newSeatH33 = document.createElement('h3');
+    newSeatH3.innerText = elementSelectInner;
+    newSeatDiv.appendChild(newSeatH3);
+    const newSeatH3second = 'Economy'
+    newSeatH32.innerText = newSeatH3second;
+    newSeatDiv.appendChild(newSeatH32);
+    const newSeatH3third = '550'
+    newSeatH33.innerText = newSeatH3third;
+    newSeatDiv.appendChild(newSeatH33);
+    newSeatDiv.classList.add("flex")
+    newSeatDiv.classList.add("justify-between")
+
+    selectElement.appendChild(newSeatDiv)
+    return newSeatDiv;
+
 }
+
+// newsseat name added function
+
 
 // SEAT NUMBER INCREASED
 
