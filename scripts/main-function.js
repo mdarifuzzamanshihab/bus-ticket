@@ -3,10 +3,11 @@ function clickBg(element) {
     const elementText = getElementText(element)
     setBgColor(elementText);
     seatIncrease()
-    const selectSeat2 = document.getElementById('seatName1')
-    selectSeat2.innerText = elementText;
+
 
     newSeatName(element);
+
+
 
 
 
@@ -31,12 +32,26 @@ function newSeatName(element) {
     newSeatDiv.appendChild(newSeatH32);
     const newSeatH3third = '550'
     newSeatH33.innerText = newSeatH3third;
+    // newSeatH33.classList.add('tk1')
+    // console.log(newSeatH33)
     newSeatDiv.appendChild(newSeatH33);
     newSeatDiv.classList.add("flex")
     newSeatDiv.classList.add("justify-between")
+    selectElement.appendChild(newSeatDiv);
+    const totalPrice = getElement('total-price')
+    let innerTotal = totalPrice.innerText;
+    let totalPrice2 = parseInt(innerTotal);
+    const newTotalPrice2 = totalPrice2 + 550;
+    totalPrice.innerText = newTotalPrice2
+    // grand total
+    const totalPrice4 = getElement('total-price2')
+    let innerTotal2 = totalPrice4.innerText;
+    let totalPrice3 = parseInt(innerTotal2);
+    const newTotalPrice4 = totalPrice3 + 550;
+    totalPrice4.innerText = newTotalPrice4
+    return totalPrice4;
 
-    selectElement.appendChild(newSeatDiv)
-    return newSeatDiv;
+
 
 }
 
