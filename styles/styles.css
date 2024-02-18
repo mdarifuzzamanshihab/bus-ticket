@@ -216,9 +216,10 @@ html{
 }
 
 .line1 {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 40px;
-  transform: translateY(-206px);
+  
+  transform:  translate(14px, -227px);
   width: 1px;
   background-color: #000000;
   height: 992px;
