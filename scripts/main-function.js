@@ -10,13 +10,26 @@ function clickBg(element) {
 
 
 
+
     // if (numberInput.elementSelect.classList.contains('bg-color')) {
 
     // }
+    const divsAll = document.querySelectorAll('div')
 
 
+    for (let i = 0; i < divsAll.length; i++) {
+        const div1 = divsAll[i]
+        if (div1.classList.contains('bg-color')) {
+
+            break;
 
 
+        }
+        else {
+
+        }
+
+    }
 
 
 
@@ -43,10 +56,10 @@ function keyUp11() {
         else {
 
         }
-        console.log(div1)
+
     }
 
-
+    
 
 
 }
@@ -55,7 +68,7 @@ function keyUp11() {
 
 
 
-//seat name added by append 
+//seat name added by append  
 
 function newSeatName(element) {
     const elementSelect = document.getElementById(element)
@@ -67,17 +80,21 @@ function newSeatName(element) {
     const newSeatH33 = document.createElement('h3');
     newSeatH3.innerText = elementSelectInner;
     newSeatDiv.appendChild(newSeatH3);
+
     const newSeatH3second = 'Economy'
     newSeatH32.innerText = newSeatH3second;
     newSeatDiv.appendChild(newSeatH32);
     const newSeatH3third = '550'
     newSeatH33.innerText = newSeatH3third;
-    // newSeatH33.classList.add('tk1')
-    // console.log(newSeatH33)
     newSeatDiv.appendChild(newSeatH33);
     newSeatDiv.classList.add("flex")
     newSeatDiv.classList.add("justify-between")
     selectElement.appendChild(newSeatDiv);
+
+    // make btn non-clickable
+    elementSelect.classList.add('disabled-none');
+
+    // total
     const totalPrice = getElement('total-price')
     let innerTotal = totalPrice.innerText;
     let totalPrice2 = parseInt(innerTotal);
@@ -89,6 +106,7 @@ function newSeatName(element) {
     let totalPrice3 = parseInt(innerTotal2);
     const newTotalPrice4 = totalPrice3 + 550;
     totalPrice4.innerText = newTotalPrice4
+    fourTickets();
     return totalPrice4;
 
 
@@ -105,7 +123,6 @@ function seatIncrease() {
     const supTextInner = supText.innerText;
     const number = parseInt(supTextInner);
     const newSeat = number + 1;
-    console.log(newSeat)
     supText.innerText = newSeat
     const leftSeat = getElement('seat40')
     const inner = leftSeat.innerText;
@@ -116,3 +133,27 @@ function seatIncrease() {
 }
 
 
+
+// function for 4 tickets
+
+function fourTickets() {
+    const selectElements = document.querySelectorAll('.bg-color');
+    console.log(selectElements)
+    const lengthOfClasses = selectElements.length;
+    const lengthMain = parseInt(lengthOfClasses);
+    const selectMainDiv1 = getElement('seatAll1')
+    const selectMainDiv2 = getElement('seatAll2')
+    const selectCoupon = getElement('coupon-field')
+
+    
+    if (lengthMain === 4) {
+        selectMainDiv1.classList.add('disabled-none')
+        selectMainDiv2.classList.add('disabled-none')
+
+    }
+    else {
+
+    }
+
+
+}

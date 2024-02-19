@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body class="bg-[#F7F8F8]">
+<body id="" class="bg-[#F7F8F8]">
     <header class="font-raleway max-w-7xl mx-auto mb-52">
         <div class="navbar bg-[#F7F8F8]">
             <div class="navbar-start">
@@ -99,7 +99,7 @@
 
         </div>
     </header>
-    <main class="">
+    <main id="body1" class="">
         <!-- offers -->
         <section class="max-w-7xl mx-auto">
             <div class="flex justify-center">
@@ -227,7 +227,23 @@
                     <p class="text-xl font-medium text-center text-gray-500">Per Seat</p>
                 </div>
             </div>
+            <!-- bb -->
+            <!-- <button onclick="openPopUp()" id="openModal1">click</button> -->
             <!-- all seat -->
+
+            <!-- alert start -->
+            <!-- <div id="ss1" class="flex justify-center items-center w-[1280px]">
+                <div id="modal11" class="flex justify-center modal1">
+                    <div class=" flex flex-col relative">
+                        <h3>You cannot buy more than 4 tickets</h3>
+                        <div class="absolute top-[14.5rem] left-[31.75rem]">
+                            <button id="closeModal" class="bg-white">Close</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> -->
+            <!-- alert -->
             <div class="all-seat-container w-full h-[1050px]  bg-[#ffff] max-w-7xl mx-auto p-14 mt-10 rounded-3xl">
                 <div class="seats space-y-4 w-[672px]">
                     <h1 class="text-2xl font-semibold">Select Your Seat</h1>
@@ -250,9 +266,10 @@
                     </div>
                 </div>
                 <!-- all seats div -->
+
                 <div class="flex relative">
                     <div class="flex flex-row justify-between space-x-36">
-                        <div>
+                        <div id="seatAll1" class="">
                             <div class="flex flex-row space-x-6 mb-4">
                                 <p class="flex items-center">A</p>
                                 <div onclick="clickBg('A1')" id="A1" class="seat1">
@@ -347,7 +364,7 @@
                         <!-- line -->
 
 
-                        <div class="">
+                        <div id="seatAll2" class="">
                             <div id="" class="ac flex space-x-6 mb-4">
                                 <div onclick="clickBg('A3')" id="A3" class="seat1">
                                     A3
@@ -461,8 +478,8 @@
                                 <h3 class="font-semibold">BDT <span id="total-price">0</span></h3>
                             </div>
                             <div class="relative">
-                                <input type="text" class="p-3 w-[400px] rounded-xl" placeholder="Have any coupon?"
-                                    name="" id=""><button type="button"
+                                <input id="coupon-field" type="text" class="p-3 w-[400px] rounded-xl" placeholder="Have any coupon?"
+                                    name="" id=""><button disabled type="button"
                                     class="absolute right-[0.60rem] text-white top-[0.25rem] bg-[#1DD100] p-2 rounded-xl w-[80px] h-[40px]">Apply</button>
                             </div>
                             <div class="flex justify-between">
@@ -476,8 +493,9 @@
                             <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="" value=""
                                 placeholder="Enter your name">
                             <h3 class="font-semibold">Phone Number*</h3>
-                            <input onkeyup="keyUp11()" id="numInput" class="w-full p-3 rounded-xl border-2 border-gray-200" type="number"
-                                value="" placeholder="Enter your phone number (11-digit)">
+                            <input onkeyup="keyUp11()" id="numInput"
+                                class="w-full p-3 rounded-xl border-2 border-gray-200" type="number" value=""
+                                placeholder="Enter your phone number (11-digit)">
                             <h3 class="font-semibold">Email ID</h3>
                             <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="email" value=""
                                 placeholder="Enter your email id">
@@ -523,6 +541,7 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/popup.js"></script>
     <script src="./scripts/main-function.js"></script>
     <script src="./scripts/utility.js"></script>
 </body>
