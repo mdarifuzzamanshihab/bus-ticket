@@ -135,7 +135,7 @@ function coupon() {
         selectInput.classList.add('hidden');
         selectButton.classList.add('hidden')
         const selectElement2 = getElement('sp-alert')
-    selectElement2.classList.add('hidden');
+        selectElement2.classList.add('hidden');
     }
 
     else if (valueInput === "Couple 20") {
@@ -212,4 +212,23 @@ function fourTickets() {
     }
 
 
+}
+
+
+// next button next page
+
+function nextButton() {
+    const selectElement1 = getElement('head-hide')
+    selectElement1.classList.add('hidden')
+    const selectElement2 = getElement('body1')
+    selectElement2.classList.add('hidden')
+    const selectElement3 = getElement('footer-hide')
+    selectElement3.classList.add('hidden');
+    const selectElement4 = getElement('success-div');
+    selectElement4.classList.remove('hidden');
+}
+
+// refresh page
+function refreshSuccessPage(){
+    location.reload();
 }
