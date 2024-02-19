@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/5862bef766.js" crossorigin="anonymous"></script>
+    <!-- style -->
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body class="bg-[#F7F8F8]">
@@ -340,7 +348,7 @@
 
 
                         <div class="">
-                            <div class="flex space-x-6 mb-4">
+                            <div id="" class="ac flex space-x-6 mb-4">
                                 <div onclick="clickBg('A3')" id="A3" class="seat1">
                                     A3
                                 </div>
@@ -468,12 +476,13 @@
                             <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="" value=""
                                 placeholder="Enter your name">
                             <h3 class="font-semibold">Phone Number*</h3>
-                            <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="" value=""
-                                placeholder="Enter your phone number">
+                            <input onkeyup="keyUp11()" id="numInput" class="w-full p-3 rounded-xl border-2 border-gray-200" type="number"
+                                value="" placeholder="Enter your phone number (11-digit)">
                             <h3 class="font-semibold">Email ID</h3>
                             <input class="w-full p-3 rounded-xl border-2 border-gray-200" type="email" value=""
                                 placeholder="Enter your email id">
-                            <button class="bg-[#1DD100] text-white w-full p-3 rounded-xl">Next</button>
+                            <button onkeyup="" disabled id="next-btn"
+                                class="bg-[#1DD100] text-white w-full p-3 rounded-xl">Next</button>
                             <div class="flex flex-row justify-around">
                                 <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
                                 <a href="#" class="underline text-[#03071299]">Cancellation Policy</a>

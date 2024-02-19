@@ -1,5 +1,6 @@
 // set bg by click
 function clickBg(element) {
+    const elementSelect = document.getElementById(element);
     const elementText = getElementText(element)
     setBgColor(elementText);
     seatIncrease()
@@ -9,11 +10,50 @@ function clickBg(element) {
 
 
 
+    // if (numberInput.elementSelect.classList.contains('bg-color')) {
+
+    // }
+
+
+
 
 
 
 
 }
+
+// new function for disabling the next button
+function keyUp11() {
+    const inputElement = getElement('numInput');
+    const inputValue = inputElement.value;
+    const arrayNum = inputValue.split('');
+    const len = arrayNum.length;
+    let len2 = parseInt(len);
+    const selectBtn = getElement('next-btn')
+    const divsAll = document.querySelectorAll('div')
+
+    for (let i = 0; i < divsAll.length; i++) {
+        const div1 = divsAll[i]
+        if (div1.classList.contains('bg-color') && len2 === 11) {
+            selectBtn.removeAttribute("disabled");
+            break;
+
+
+        }
+        else {
+
+        }
+        console.log(div1)
+    }
+
+
+
+
+}
+
+
+
+
 
 //seat name added by append 
 
@@ -74,3 +114,5 @@ function seatIncrease() {
     leftSeat.innerText = leftSeatUpdate;
     return leftSeat;
 }
+
+
