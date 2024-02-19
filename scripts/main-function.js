@@ -59,7 +59,7 @@ function keyUp11() {
 
     }
 
-    
+
 
 
 }
@@ -107,11 +107,51 @@ function newSeatName(element) {
     const newTotalPrice4 = totalPrice3 + 550;
     totalPrice4.innerText = newTotalPrice4
     fourTickets();
+
+
     return totalPrice4;
 
 
 
 }
+// 
+function coupon() {
+
+    const selectInput = getElement('coupon-field');
+    const valueInput = selectInput.value;
+    const totalPrice = getElementText('total-price');
+    const new2 = getElement('dis-price')
+    const makNumber = parseInt(totalPrice)
+    const selectButton = getElement('btn-coup')
+    if (valueInput === "NEW15") {
+
+        const new1 = makNumber * 0.15;
+
+        new2.innerText = new1
+        console.log(new1)
+        const grandTotal = makNumber - new1;
+        const selectGrand = getElement('total-price2');
+        selectGrand.innerText = grandTotal;
+
+    }
+
+    else if (valueInput === "Couple 20") {
+
+        const new3 = getElementText('total-price')
+        const new4 = parseInt(new3)
+        const new5 = new4 * 0.20;
+        new2.innerText = new5
+        const grandTotal = makNumber - new5;
+        const selectGrand = getElement('total-price2');
+        selectGrand.innerText = grandTotal;
+
+    }
+    else {
+
+    }
+
+}
+
 
 // newsseat name added function
 
@@ -143,12 +183,13 @@ function fourTickets() {
     const lengthMain = parseInt(lengthOfClasses);
     const selectMainDiv1 = getElement('seatAll1')
     const selectMainDiv2 = getElement('seatAll2')
-    const selectCoupon = getElement('coupon-field')
+    const selectCoupon = getElement('coupon-field');
 
-    
+
     if (lengthMain === 4) {
         selectMainDiv1.classList.add('disabled-none')
         selectMainDiv2.classList.add('disabled-none')
+        selectCoupon.removeAttribute('disabled')
 
     }
     else {
