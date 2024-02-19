@@ -11,9 +11,7 @@ function clickBg(element) {
 
 
 
-    // if (numberInput.elementSelect.classList.contains('bg-color')) {
-
-    // }
+   
     const divsAll = document.querySelectorAll('div')
 
 
@@ -168,7 +166,6 @@ function alert1() {
 }
 
 
-// newsseat name added function
 
 
 // SEAT NUMBER INCREASED
