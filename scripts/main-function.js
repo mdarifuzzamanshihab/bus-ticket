@@ -132,7 +132,10 @@ function coupon() {
         const grandTotal = makNumber - new1;
         const selectGrand = getElement('total-price2');
         selectGrand.innerText = grandTotal;
-
+        selectInput.classList.add('hidden');
+        selectButton.classList.add('hidden')
+        const selectElement2 = getElement('sp-alert')
+    selectElement2.classList.add('hidden');
     }
 
     else if (valueInput === "Couple 20") {
@@ -144,12 +147,24 @@ function coupon() {
         const grandTotal = makNumber - new5;
         const selectGrand = getElement('total-price2');
         selectGrand.innerText = grandTotal;
-
+        selectInput.classList.add('hidden');
+        selectButton.classList.add('hidden');
+        const selectElement2 = getElement('sp-alert')
+        selectElement2.classList.add('hidden');
     }
     else {
-
+        alert1()
     }
 
+}
+
+// alert coupon
+
+function alert1() {
+    const selectElement2 = getElement('sp-alert')
+    selectElement2.classList.remove('hidden');
+    const selectElement = getElement('coupon-field')
+    selectElement.classList.add('red-alert-border')
 }
 
 

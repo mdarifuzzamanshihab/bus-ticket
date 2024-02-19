@@ -282,3 +282,10 @@ html {
   z-index: 999;
 }
 
+
+
+/* alert red */
+.red-alert-border{
+  border: 1px solid rgba(255, 0, 0, 0.584);
+  
+}
